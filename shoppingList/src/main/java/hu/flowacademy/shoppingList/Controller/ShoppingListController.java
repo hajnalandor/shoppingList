@@ -62,11 +62,10 @@ public class ShoppingListController {
     @GetMapping("/sum")
     public ResponseEntity<Integer> sum() {
         Integer sum1=0;
-        for (var s: list.entrySet()) {
+        /*for (var s: list.entrySet()) {
     sum1+=s.getValue().getPrice()*s.getValue().getQuantityOne()*s.getValue().getQuantity();
-        }
-        //list.entrySet().stream().
-        return ResponseEntity.ok(sum1);
+        }*/
+        return ResponseEntity.ok(list.values().stream().map(s -> s.getPrice()*s.getQuantity()).reduce(0, (a, b) -> a + b));
     }
 
 
