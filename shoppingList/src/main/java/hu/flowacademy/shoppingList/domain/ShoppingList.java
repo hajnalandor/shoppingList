@@ -1,6 +1,6 @@
 package hu.flowacademy.shoppingList.domain;
 
-public class shoppingList {
+public class ShoppingList {
     private String id;
     private String name;
     private String cathegory;
@@ -9,7 +9,7 @@ public class shoppingList {
     private int price;
     private String description;
 
-    
+
     public String getId() {
         return id;
     }
