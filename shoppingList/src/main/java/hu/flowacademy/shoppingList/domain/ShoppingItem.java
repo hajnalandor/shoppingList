@@ -1,12 +1,34 @@
 package hu.flowacademy.shoppingList.domain;
 
-public class ShoppingList {
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "shopping_item")
+public class ShoppingItem {
+
+    @Id
+    @Column(name = "id", length = 10)
     private String id;
+
+    @Column
     private String name;
+
+    @Column
     private String cathegory;
+
+    @Column
     private int quantity;
+
+    @Column
     private int quantityOne;
+
+    @Column
     private int price;
+
+    @Column
     private String description;
 
 

@@ -1,0 +1,64 @@
+package hu.flowacademy.shoppingList.service;
+
+import hu.flowacademy.shoppingList.domain.ShoppingItem;
+
+import hu.flowacademy.shoppingList.exception.ListItemNotFoundException;
+import hu.flowacademy.shoppingList.repository.ShoppingListRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.EmptyResultDataAccessException;
+import org.springframework.stereotype.Service;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+
+@Service
+public class ShoppingService {
+
+    @Autowired
+    private ShoppingListRepository shoppingListRepository;
+
+    public ShoppingItem save(ShoppingItem shoppingItem) {
+        return shoppingListRepository.save(shoppingItem);
+    }
+
+    public List<ShoppingItem> saveList(List<ShoppingItem> shoppingList) {
+        List<ShoppingItem> list = new ArrayList<>();
+        for (var i: shoppingList) {
+            if(i.getId() != null) {
+                shoppingListRepository.save(i);
+                list.add(i);
+            }
+        }
+        return list;
+
+    }
+
+    public void delete(String id) {
+        try {
+            shoppingListRepository.deleteById(id);
+        } catch (EmptyResultDataAccessException e) {
+            throw new ListItemNotFoundException(id);
+        }
+    }
+
+    public List<ShoppingItem> listItems() {
+        return shoppingListRepository.findAll();
+    }
+
+    public int sum() {
+        return shoppingListRepository.sumprice();
+    }
+
+    public ShoppingItem getOneItem(String id) {
+        if (shoppingListRepository.findById(id).isPresent()) {
+            return shoppingListRepository.findById(id).get();
+        }
+        throw new ListItemNotFoundException(id);
+    }
+
+
+
+
+
+}
