@@ -66,7 +66,7 @@ public class ShoppingService {
     }
 
     public List<ShoppingItem> getUserStartingWith(String username) {
-        return shoppingListRepository.findByUser_userNameStartingWith(username);
+        return shoppingListRepository.findByUser_userNameStartingWithOrderByName(username);
     }
 
 

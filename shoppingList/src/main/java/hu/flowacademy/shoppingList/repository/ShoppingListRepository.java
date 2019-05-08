@@ -19,7 +19,7 @@ public interface ShoppingListRepository extends JpaRepository<ShoppingItem, Stri
 
     public List<ShoppingItem> findByUser_userName(String login);
 
-    public List<ShoppingItem> findByUser_userNameStartingWith(String login);
+    public List<ShoppingItem> findByUser_userNameStartingWithOrderByName(String login);
 
 
 }
