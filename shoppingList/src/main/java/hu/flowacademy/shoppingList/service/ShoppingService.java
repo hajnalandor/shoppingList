@@ -57,8 +57,17 @@ public class ShoppingService {
         throw new ListItemNotFoundException(id);
     }
 
+    public long getCount(String username) {
+        return shoppingListRepository.getCount(username);
+    }
 
+    public List<ShoppingItem> getUserListByUserName(String username) {
+        return shoppingListRepository.findByUser_userName(username);
+    }
 
+    public List<ShoppingItem> getUserStartingWith(String username) {
+        return shoppingListRepository.findByUser_userNameStartingWith(username);
+    }
 
 
 }

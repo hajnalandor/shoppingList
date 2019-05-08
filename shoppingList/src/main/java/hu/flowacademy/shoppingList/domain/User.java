@@ -19,6 +19,16 @@ public class User {
     @Column(name="name")
    private String name;
 
+
+    public User(String userName, String password, String name) {
+        this.userName = userName;
+        this.password = password;
+        this.name = name;
+    }
+
+    public User() {
+    }
+
     public String getUserName() {
         return userName;
     }

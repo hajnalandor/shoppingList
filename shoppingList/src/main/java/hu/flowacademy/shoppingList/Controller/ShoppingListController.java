@@ -56,6 +56,19 @@ public class ShoppingListController {
          return ResponseEntity.ok(shoppingService.sum());
     }
 
+    @GetMapping("/count/{username}")
+    public ResponseEntity<Long> getCount(@PathVariable String username) {
+        return ResponseEntity.ok(shoppingService.getCount(username));
+    }
+
+    @GetMapping("getByUsername/{userName}")
+    public ResponseEntity<List<ShoppingItem>> getSh(@PathVariable String userName) {
+        return ResponseEntity.ok(shoppingService.getUserListByUserName(userName));
+    }
+    @GetMapping("startswith/{username}")
+    public ResponseEntity<List<ShoppingItem>> getsh1(@PathVariable String username) {
+        return ResponseEntity.ok(shoppingService.getUserStartingWith(username));
+    }
 
 
 
