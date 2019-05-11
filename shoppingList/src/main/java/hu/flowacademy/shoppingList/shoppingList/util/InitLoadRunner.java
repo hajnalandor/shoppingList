@@ -1,9 +1,11 @@
-package hu.flowacademy.shoppingList.util;
+package hu.flowacademy.shoppingList.shoppingList.util;
 
-import hu.flowacademy.shoppingList.domain.ShoppingItem;
-import hu.flowacademy.shoppingList.domain.User;
-import hu.flowacademy.shoppingList.repository.ShoppingListRepository;
-import hu.flowacademy.shoppingList.repository.UserRepository;
+import hu.flowacademy.shoppingList.shoppingList.domain.ShoppingItem;
+import hu.flowacademy.shoppingList.shoppingList.domain.User;
+import hu.flowacademy.shoppingList.shoppingList.domain.Variant;
+import hu.flowacademy.shoppingList.shoppingList.repository.ShoppingListRepository;
+import hu.flowacademy.shoppingList.shoppingList.repository.UserRepository;
+import hu.flowacademy.shoppingList.shoppingList.repository.VariantRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
@@ -16,6 +18,9 @@ public class InitLoadRunner implements CommandLineRunner {
 
     @Autowired
     private UserRepository userRepository;
+
+    @Autowired
+    private VariantRepository variantRepository;
 
     @Override
     public void run(String... args) throws Exception {
@@ -33,6 +38,14 @@ public class InitLoadRunner implements CommandLineRunner {
 
         shoppingListRepository.save(s1);
         shoppingListRepository.save(s2);
+
+        Variant v1= new Variant("segedfogkefe",12.32D,s1);
+        Variant v2 = new Variant("izePotlo",5D,s2);
+
+        variantRepository.save(v1);
+        variantRepository.save(v2);
+
+
 
     }
 }

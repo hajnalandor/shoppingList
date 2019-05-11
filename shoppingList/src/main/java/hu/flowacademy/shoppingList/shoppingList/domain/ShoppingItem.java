@@ -1,6 +1,7 @@
-package hu.flowacademy.shoppingList.domain;
+package hu.flowacademy.shoppingList.shoppingList.domain;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "shopping_item")
@@ -31,6 +32,9 @@ public class ShoppingItem {
     @OneToOne
     @JoinColumn(name = "item_username", foreignKey = @ForeignKey(name = "fk_username"))
     private User user;
+
+    @OneToMany(mappedBy = "shoppingItem")
+    private List<Variant> variantItems;
 
     public ShoppingItem(String id, String name, String cathegory, int quantity, int quantityOne, int price, String description, User user) {
         this.id = id;

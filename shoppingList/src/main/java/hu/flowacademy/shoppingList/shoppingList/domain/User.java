@@ -1,4 +1,4 @@
-package hu.flowacademy.shoppingList.domain;
+package hu.flowacademy.shoppingList.shoppingList.domain;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

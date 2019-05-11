@@ -1,9 +1,8 @@
-package hu.flowacademy.shoppingList.repository;
+package hu.flowacademy.shoppingList.shoppingList.repository;
 
-import hu.flowacademy.shoppingList.domain.ShoppingItem;
+import hu.flowacademy.shoppingList.shoppingList.domain.ShoppingItem;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.query.Param;
 
 import java.util.List;
 

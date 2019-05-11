@@ -1,15 +1,12 @@
-package hu.flowacademy.shoppingList.Controller;
+package hu.flowacademy.shoppingList.shoppingList.Controller;
 
-import hu.flowacademy.shoppingList.domain.ShoppingItem;
-import hu.flowacademy.shoppingList.service.ShoppingService;
+import hu.flowacademy.shoppingList.shoppingList.domain.ShoppingItem;
+import hu.flowacademy.shoppingList.shoppingList.service.ShoppingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 @RestController
 @RequestMapping(path = "/shoppinglist")

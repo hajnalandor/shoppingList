@@ -1,4 +1,4 @@
-package hu.flowacademy.shoppingList.exception;
+package hu.flowacademy.shoppingList.shoppingList.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ExceptionHandler;
