@@ -1,4 +1,4 @@
-package hu.flowacademy.shoppingList.shoppingList.domain;
+package hu.flowacademy.shoppingList.domain;
 
 import javax.persistence.*;
 import java.util.List;

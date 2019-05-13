@@ -1,9 +1,9 @@
-package hu.flowacademy.shoppingList.shoppingList.service;
+package hu.flowacademy.shoppingList.service;
 
-import hu.flowacademy.shoppingList.shoppingList.domain.ShoppingItem;
+import hu.flowacademy.shoppingList.domain.ShoppingItem;
 
-import hu.flowacademy.shoppingList.shoppingList.exception.ListItemNotFoundException;
-import hu.flowacademy.shoppingList.shoppingList.repository.ShoppingListRepository;
+import hu.flowacademy.shoppingList.exception.ListItemNotFoundException;
+import hu.flowacademy.shoppingList.repository.ShoppingListRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;

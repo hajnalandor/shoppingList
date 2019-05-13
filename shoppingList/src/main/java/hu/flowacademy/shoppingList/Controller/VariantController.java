@@ -1,7 +1,7 @@
-package hu.flowacademy.shoppingList.shoppingList.Controller;
+package hu.flowacademy.shoppingList.Controller;
 
-import hu.flowacademy.shoppingList.shoppingList.domain.Variant;
-import hu.flowacademy.shoppingList.shoppingList.service.VariantService;
+import hu.flowacademy.shoppingList.domain.Variant;
+import hu.flowacademy.shoppingList.service.VariantService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

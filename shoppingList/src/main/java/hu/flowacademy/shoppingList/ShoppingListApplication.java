@@ -1,4 +1,4 @@
-package hu.flowacademy.shoppingList.shoppingList;
+package hu.flowacademy.shoppingList;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

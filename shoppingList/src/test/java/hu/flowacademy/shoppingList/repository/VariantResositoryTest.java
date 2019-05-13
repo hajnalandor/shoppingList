@@ -1,9 +1,8 @@
 package hu.flowacademy.shoppingList.repository;
 
-import hu.flowacademy.shoppingList.shoppingList.domain.ShoppingItem;
-import hu.flowacademy.shoppingList.shoppingList.domain.User;
-import hu.flowacademy.shoppingList.shoppingList.domain.Variant;
-import hu.flowacademy.shoppingList.shoppingList.repository.VariantRepository;
+import hu.flowacademy.shoppingList.domain.ShoppingItem;
+import hu.flowacademy.shoppingList.domain.User;
+import hu.flowacademy.shoppingList.domain.Variant;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

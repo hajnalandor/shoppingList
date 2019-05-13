@@ -1,7 +1,6 @@
-package hu.flowacademy.shoppingList.shoppingList.repository;
+package hu.flowacademy.shoppingList.repository;
 
-import hu.flowacademy.shoppingList.shoppingList.domain.User;
-import hu.flowacademy.shoppingList.shoppingList.domain.Variant;
+import hu.flowacademy.shoppingList.domain.Variant;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;

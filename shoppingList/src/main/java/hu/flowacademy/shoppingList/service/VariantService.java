@@ -1,8 +1,7 @@
-package hu.flowacademy.shoppingList.shoppingList.service;
+package hu.flowacademy.shoppingList.service;
 
-import hu.flowacademy.shoppingList.shoppingList.domain.Variant;
-import hu.flowacademy.shoppingList.shoppingList.repository.VariantRepository;
-import org.aspectj.weaver.ast.Var;
+import hu.flowacademy.shoppingList.repository.VariantRepository;
+import hu.flowacademy.shoppingList.domain.Variant;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

@@ -1,11 +1,11 @@
-package hu.flowacademy.shoppingList.shoppingList.util;
+package hu.flowacademy.shoppingList.util;
 
-import hu.flowacademy.shoppingList.shoppingList.domain.ShoppingItem;
-import hu.flowacademy.shoppingList.shoppingList.domain.User;
-import hu.flowacademy.shoppingList.shoppingList.domain.Variant;
-import hu.flowacademy.shoppingList.shoppingList.repository.ShoppingListRepository;
-import hu.flowacademy.shoppingList.shoppingList.repository.UserRepository;
-import hu.flowacademy.shoppingList.shoppingList.repository.VariantRepository;
+import hu.flowacademy.shoppingList.domain.User;
+import hu.flowacademy.shoppingList.domain.Variant;
+import hu.flowacademy.shoppingList.repository.ShoppingListRepository;
+import hu.flowacademy.shoppingList.repository.UserRepository;
+import hu.flowacademy.shoppingList.repository.VariantRepository;
+import hu.flowacademy.shoppingList.domain.ShoppingItem;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;

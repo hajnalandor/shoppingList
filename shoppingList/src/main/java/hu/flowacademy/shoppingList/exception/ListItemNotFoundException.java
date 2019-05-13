@@ -1,4 +1,4 @@
-package hu.flowacademy.shoppingList.shoppingList.exception;
+package hu.flowacademy.shoppingList.exception;
 
 public class ListItemNotFoundException extends RuntimeException{
 
